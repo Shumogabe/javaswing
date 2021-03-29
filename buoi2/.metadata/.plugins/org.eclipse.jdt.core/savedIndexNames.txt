@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+D:\New folder\HK2\Java\buoi2\.metadata\.plugins\org.eclipse.jdt.core
+1061942018.index
+1004542932.index

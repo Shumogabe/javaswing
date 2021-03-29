@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+D:\New folder\HK2\Java\DangKy\.metadata\.plugins\org.eclipse.jdt.core
+1004542932.index
+3853994233.index

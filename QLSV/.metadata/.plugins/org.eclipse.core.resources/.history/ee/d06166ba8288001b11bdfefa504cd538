@@ -1,0 +1,135 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.JTextField;
+import javax.swing.JTextArea;
+import javax.swing.JComboBox;
+import javax.swing.JFormattedTextField;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JCheckBox;
+import javax.swing.JButton;
+
+public class studentDetail {
+
+	private JFrame frame;
+	private JTextField textField;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					studentDetail window = new studentDetail();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public studentDetail() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 575, 399);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("Name: ");
+		lblNewLabel.setBounds(24, 29, 45, 13);
+		lblNewLabel.setFont(new Font("Times New Roman", Font.PLAIN, 14));
+		frame.getContentPane().add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("Qualification: ");
+		lblNewLabel_1.setBounds(296, 27, 80, 17);
+		lblNewLabel_1.setFont(new Font("Times New Roman", Font.PLAIN, 14));
+		frame.getContentPane().add(lblNewLabel_1);
+		
+		JLabel lblNewLabel_2 = new JLabel("Address: ");
+		lblNewLabel_2.setBounds(24, 71, 54, 17);
+		lblNewLabel_2.setFont(new Font("Times New Roman", Font.PLAIN, 14));
+		frame.getContentPane().add(lblNewLabel_2);
+		
+		JLabel lblNewLabel_3 = new JLabel("Hoppy: ");
+		lblNewLabel_3.setBounds(296, 71, 54, 17);
+		lblNewLabel_3.setFont(new Font("Times New Roman", Font.PLAIN, 14));
+		frame.getContentPane().add(lblNewLabel_3);
+		
+		JLabel lblNewLabel_4 = new JLabel("Sex: ");
+		lblNewLabel_4.setBounds(24, 194, 45, 13);
+		lblNewLabel_4.setFont(new Font("Times New Roman", Font.PLAIN, 14));
+		frame.getContentPane().add(lblNewLabel_4);
+		
+		textField = new JTextField();
+		textField.setBounds(88, 27, 106, 19);
+		frame.getContentPane().add(textField);
+		textField.setColumns(10);
+		
+		JTextArea textArea = new JTextArea();
+		textArea.setBounds(88, 68, 198, 97);
+		frame.getContentPane().add(textArea);
+		
+		JComboBox comboBox = new JComboBox();
+		comboBox.setBounds(410, 26, 106, 21);
+		frame.getContentPane().add(comboBox);
+		
+		JPanel panel = new JPanel();
+		panel.setBounds(88, 194, 80, 63);
+		frame.getContentPane().add(panel);
+		panel.setLayout(null);
+		
+		JRadioButton rdbtnNewRadioButton_1 = new JRadioButton("Male");
+		rdbtnNewRadioButton_1.setFont(new Font("Times New Roman", Font.PLAIN, 14));
+		rdbtnNewRadioButton_1.setBounds(7, 6, 59, 21);
+		panel.add(rdbtnNewRadioButton_1);
+		
+		JRadioButton rdbtnNewRadioButton = new JRadioButton("Female");
+		rdbtnNewRadioButton.setFont(new Font("Times New Roman", Font.PLAIN, 14));
+		rdbtnNewRadioButton.setBounds(7, 31, 78, 21);
+		panel.add(rdbtnNewRadioButton);
+		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBounds(410, 71, 106, 94);
+		frame.getContentPane().add(panel_1);
+		panel_1.setLayout(null);
+		
+		JCheckBox chckbxNewCheckBox_1 = new JCheckBox("Reading");
+		chckbxNewCheckBox_1.setBounds(6, 6, 71, 25);
+		chckbxNewCheckBox_1.setFont(new Font("Times New Roman", Font.PLAIN, 14));
+		panel_1.add(chckbxNewCheckBox_1);
+		
+		JCheckBox chckbxNewCheckBox_2 = new JCheckBox("Singing");
+		chckbxNewCheckBox_2.setBounds(6, 33, 67, 25);
+		chckbxNewCheckBox_2.setFont(new Font("Times New Roman", Font.PLAIN, 14));
+		panel_1.add(chckbxNewCheckBox_2);
+		
+		JCheckBox chckbxNewCheckBox = new JCheckBox("Dancing");
+		chckbxNewCheckBox.setBounds(6, 63, 73, 25);
+		chckbxNewCheckBox.setFont(new Font("Times New Roman", Font.PLAIN, 14));
+		panel_1.add(chckbxNewCheckBox);
+		
+		JButton btnNewButton = new JButton("Validate");
+		btnNewButton.setFont(new Font("Times New Roman", Font.PLAIN, 14));
+		btnNewButton.setBounds(147, 303, 85, 21);
+		frame.getContentPane().add(btnNewButton);
+		
+		JButton btnNewButton_1 = new JButton("Reset");
+		btnNewButton_1.setFont(new Font("Times New Roman", Font.PLAIN, 14));
+		btnNewButton_1.setBounds(291, 303, 85, 21);
+		frame.getContentPane().add(btnNewButton_1);
+	}
+}

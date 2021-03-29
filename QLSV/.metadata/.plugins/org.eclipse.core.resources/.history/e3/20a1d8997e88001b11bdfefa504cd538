@@ -1,0 +1,90 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.JTextField;
+import javax.swing.JTextArea;
+import javax.swing.JComboBox;
+import javax.swing.JFormattedTextField;
+
+public class studentDetail {
+
+	private JFrame frame;
+	private JTextField textField;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					studentDetail window = new studentDetail();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public studentDetail() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 575, 399);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("Name: ");
+		lblNewLabel.setFont(new Font("Times New Roman", Font.PLAIN, 14));
+		lblNewLabel.setBounds(24, 29, 45, 13);
+		frame.getContentPane().add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("Qualification: ");
+		lblNewLabel_1.setFont(new Font("Times New Roman", Font.PLAIN, 14));
+		lblNewLabel_1.setBounds(296, 27, 80, 17);
+		frame.getContentPane().add(lblNewLabel_1);
+		
+		JLabel lblNewLabel_2 = new JLabel("Address: ");
+		lblNewLabel_2.setFont(new Font("Times New Roman", Font.PLAIN, 14));
+		lblNewLabel_2.setBounds(24, 71, 54, 17);
+		frame.getContentPane().add(lblNewLabel_2);
+		
+		JLabel lblNewLabel_3 = new JLabel("Hoppy: ");
+		lblNewLabel_3.setFont(new Font("Times New Roman", Font.PLAIN, 14));
+		lblNewLabel_3.setBounds(296, 71, 54, 17);
+		frame.getContentPane().add(lblNewLabel_3);
+		
+		JLabel lblNewLabel_4 = new JLabel("Sex: ");
+		lblNewLabel_4.setFont(new Font("Times New Roman", Font.PLAIN, 14));
+		lblNewLabel_4.setBounds(24, 194, 45, 13);
+		frame.getContentPane().add(lblNewLabel_4);
+		
+		textField = new JTextField();
+		textField.setBounds(88, 27, 106, 19);
+		frame.getContentPane().add(textField);
+		textField.setColumns(10);
+		
+		JTextArea textArea = new JTextArea();
+		textArea.setBounds(88, 68, 198, 97);
+		frame.getContentPane().add(textArea);
+		
+		JComboBox comboBox = new JComboBox();
+		comboBox.setBounds(410, 26, 106, 21);
+		frame.getContentPane().add(comboBox);
+		
+		JFormattedTextField formattedTextField = new JFormattedTextField();
+		formattedTextField.setBounds(173, 244, 91, 44);
+		frame.getContentPane().add(formattedTextField);
+	}
+}

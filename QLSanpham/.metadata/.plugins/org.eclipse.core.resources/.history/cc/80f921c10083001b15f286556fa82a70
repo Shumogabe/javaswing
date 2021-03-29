@@ -1,0 +1,106 @@
+package Interface;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import java.awt.Font;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class formDanhmucloaiSP extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField textField;
+	private JTextField textField_1;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					formDanhmucloaiSP frame = new formDanhmucloaiSP();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public formDanhmucloaiSP() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 625, 378);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("DANH M\u1EE4C LO\u1EA0I S\u1EA2N PH\u1EA8M");
+		lblNewLabel.setFont(new Font("Times New Roman", Font.BOLD, 20));
+		lblNewLabel.setBounds(166, 24, 296, 32);
+		contentPane.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("M\u00E3 lo\u1EA1i:");
+		lblNewLabel_1.setFont(new Font("Times New Roman", Font.PLAIN, 13));
+		lblNewLabel_1.setBounds(10, 68, 45, 13);
+		contentPane.add(lblNewLabel_1);
+		
+		JLabel lblNewLabel_2 = new JLabel("T\u00EAn lo\u1EA1i:");
+		lblNewLabel_2.setFont(new Font("Times New Roman", Font.PLAIN, 13));
+		lblNewLabel_2.setBounds(10, 104, 45, 13);
+		contentPane.add(lblNewLabel_2);
+		
+		textField = new JTextField();
+		textField.setBounds(101, 66, 96, 19);
+		contentPane.add(textField);
+		textField.setColumns(10);
+		
+		textField_1 = new JTextField();
+		textField_1.setBounds(101, 102, 213, 19);
+		contentPane.add(textField_1);
+		textField_1.setColumns(10);
+		
+		JButton btnNewButton = new JButton("Th\u00EAm");
+		btnNewButton.setBounds(10, 138, 59, 21);
+		contentPane.add(btnNewButton);
+		
+		JButton btnXa = new JButton("S\u1EEDa");
+		btnXa.setBounds(94, 138, 59, 21);
+		contentPane.add(btnXa);
+		
+		JButton btnSa = new JButton("S\u1EEDa");
+		btnSa.setBounds(177, 138, 59, 21);
+		contentPane.add(btnSa);
+		
+		JButton btnLu = new JButton("L\u01B0u");
+		btnLu.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnLu.setBounds(255, 138, 59, 21);
+		contentPane.add(btnLu);
+		
+		JButton btnKhngLu = new JButton("Kh\u00F4ng l\u01B0u");
+		btnKhngLu.setBounds(340, 138, 86, 21);
+		contentPane.add(btnKhngLu);
+		
+		JButton btnThot = new JButton("Tho\u00E1t");
+		btnThot.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnThot.setBounds(440, 138, 59, 21);
+		contentPane.add(btnThot);
+	}
+}

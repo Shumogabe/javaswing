@@ -1,0 +1,16 @@
+127.0.0.1 - - [26/Mar/2021:13:02:42 +0700] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [26/Mar/2021:13:29:18 +0700] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [26/Mar/2021:13:29:25 +0700] "GET /JavaServerPage/WEB-INF/web.xml HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [26/Mar/2021:13:30:01 +0700] "GET /JavaServerPage/WEB-INF/web.xml HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [26/Mar/2021:13:30:27 +0700] "GET /JavaServerPage/HelloWorld.jsp HTTP/1.1" 200 155
+0:0:0:0:0:0:0:1 - - [26/Mar/2021:13:32:30 +0700] "GET /JavaServerPage/HelloWorld.jsp HTTP/1.1" 200 155
+0:0:0:0:0:0:0:1 - - [26/Mar/2021:13:36:35 +0700] "GET /JavaServerPage/HelloWorld.jsp HTTP/1.1" 200 159
+0:0:0:0:0:0:0:1 - - [26/Mar/2021:13:37:15 +0700] "GET /JavaServerPage/HelloWorld.jsp HTTP/1.1" 200 156
+127.0.0.1 - - [26/Mar/2021:14:30:06 +0700] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [26/Mar/2021:14:30:07 +0700] "GET /JavaServerPage/HelloWorld.jsp HTTP/1.1" 500 3527
+0:0:0:0:0:0:0:1 - - [26/Mar/2021:14:30:27 +0700] "GET /JavaServerPage/HelloWorld.jsp HTTP/1.1" 500 3045
+0:0:0:0:0:0:0:1 - - [26/Mar/2021:14:31:24 +0700] "GET /JavaServerPage/HelloWorld.jsp HTTP/1.1" 500 3063
+0:0:0:0:0:0:0:1 - - [26/Mar/2021:14:33:45 +0700] "GET /JavaServerPage/HelloWorld.jsp HTTP/1.1" 500 3562
+0:0:0:0:0:0:0:1 - - [26/Mar/2021:14:34:42 +0700] "GET /JavaServerPage/HelloWorld.jsp HTTP/1.1" 200 262
+127.0.0.1 - - [26/Mar/2021:15:58:55 +0700] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [26/Mar/2021:15:58:57 +0700] "GET /JavaServerPage/tienlong.jsp HTTP/1.1" 200 262

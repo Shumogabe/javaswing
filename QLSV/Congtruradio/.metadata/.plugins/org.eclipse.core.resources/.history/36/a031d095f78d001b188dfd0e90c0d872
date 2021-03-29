@@ -1,0 +1,60 @@
+package pheptinh;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import java.awt.Font;
+import java.awt.Color;
+import javax.swing.Box;
+import javax.swing.JPanel;
+
+public class pheptinh {
+
+	private JFrame frmCngTr;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					pheptinh window = new pheptinh();
+					window.frmCngTr.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public pheptinh() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frmCngTr = new JFrame();
+		frmCngTr.setTitle("C\u1ED9ng - tr\u1EEB - nh\u00E2n - chia");
+		frmCngTr.setBounds(100, 100, 588, 455);
+		frmCngTr.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmCngTr.getContentPane().setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("C\u1ED9ng Tr\u1EEB Nh\u00E2n Chia");
+		lblNewLabel.setForeground(Color.BLUE);
+		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 20));
+		lblNewLabel.setBounds(166, 28, 284, 65);
+		frmCngTr.getContentPane().add(lblNewLabel);
+		
+		JPanel panel = new JPanel();
+		panel.setToolTipText("\u00E1dasdsad");
+		panel.setBounds(108, 146, 240, 174);
+		frmCngTr.getContentPane().add(panel);
+	}
+}

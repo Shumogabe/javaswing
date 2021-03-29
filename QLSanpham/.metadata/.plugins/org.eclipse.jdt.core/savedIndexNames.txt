@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+D:\New folder\HK2\Java\QLSanpham\.metadata\.plugins\org.eclipse.jdt.core
+3459258329.index
+620890683.index
+1004542932.index

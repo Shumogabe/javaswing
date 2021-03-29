@@ -1,0 +1,1 @@
+INDEX VERSION 1.4+D:\New folder\HK2\Java\QLSV\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes

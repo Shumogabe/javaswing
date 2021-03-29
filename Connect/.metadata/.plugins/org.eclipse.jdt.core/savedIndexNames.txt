@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+D:\New folder\HK2\Java\Connect\.metadata\.plugins\org.eclipse.jdt.core
+620890683.index
+1102390813.index
+186368694.index
+1004542932.index
+3651910539.index
