@@ -31,3 +31,7 @@ $git remote add origin ssh://git@example.com:1234/myRepo.git
 
 # this will now work as expected
 $git push origin master
+
+
+`````````````````````````````````````````````````````````````````
+https://stackoverflow.com/questions/32238616/git-push-fatal-origin-does-not-appear-to-be-a-git-repository-fatal-could-n
