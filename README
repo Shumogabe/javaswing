@@ -1,0 +1,37 @@
+First, check that your origin is set by running
+
+git remote -v
+This should show you all of the push / fetch remotes for the project.
+
+If this returns with no output, skip to last code block.
+
+Verify remote name / address
+
+If this returns showing that you have remotes set, check that the name of the remote matches the remote you are using in your commands.
+
+$git remote -v
+myOrigin ssh://git@example.com:1234/myRepo.git (fetch)
+myOrigin ssh://git@example.com:1234/myRepo.git (push)
+
+# this will fail because `origin` is not set
+$git push origin master
+
+# you need to use
+$git push myOrigin master
+If you want to rename the remote or change the remote's URL, you'll want to first remove the old remote, and then add the correct one.
+
+Remove the old remote
+
+$git remote remove myOrigin
+Add missing remote
+
+You can then add in the proper remote using
+
+$git remote add origin ssh://git@example.com:1234/myRepo.git
+
+# this will now work as expected
+$git push origin master
+
+
+`````````````````````````````````````````````````````````````````
+https://stackoverflow.com/questions/32238616/git-push-fatal-origin-does-not-appear-to-be-a-git-repository-fatal-could-n

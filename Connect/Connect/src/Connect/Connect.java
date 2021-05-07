@@ -6,7 +6,7 @@ public class Connect {
 
 	public static void main(String[] args){
 		// TODO Auto-generated method stub
-			String url = "jdbc:sqlserver://LAPTOP-R880T7P1\\SHUMOGABE:80;databaseName=dh8c6;integratedSecurity=true";
+			String url = "jdbc:sqlserver://LAPTOP-R880T7P1\\SHUMOGABE:80;databaseName=QLSV_C6;integratedSecurity=true";
 			String user = "sa";
 			String password = "123456";
 			try {
