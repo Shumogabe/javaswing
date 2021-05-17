@@ -42,7 +42,7 @@ public class registerDAO {
 			ps.executeUpdate();
 		}catch(SQLException e) {
 			e.printStackTrace();
-			result = "Thêm xong rồi";
+			result = "Thêm không thành rồi";
 		}
 		return result;
 	}
