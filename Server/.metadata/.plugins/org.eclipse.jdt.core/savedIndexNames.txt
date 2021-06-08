@@ -28,7 +28,6 @@ INDEX VERSION 1.131+D:\Newfolder\HK2\javaswing\Server\.metadata\.plugins\org.ecl
 974857988.index
 2768321783.index
 2877874311.index
-3689519981.index
 1475841357.index
 974003300.index
 2832171779.index
